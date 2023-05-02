@@ -1,0 +1,56 @@
+<h3 class="text-light fw-bold">Registro de Matérias</h3>
+<form action="" class="bg-light p-3 rounded m-3 w-100">
+  <div class="mb-3">
+    <label for="name" class="form-label text-primary">Nome:</label>
+    <input type="text" class="form-control" id="name" name="name" placeholder="nome completo"/>
+  </div>
+    
+  <div class="mb-3">
+    <label for="class-hours" class="form-label text-primary">Carga horária de horas aula:</label>
+    <input type="number" class="form-control"  id="class-hours" name="class-hours" min="1" placeholder="0"/>
+   </div>
+  
+  <div class="mb-3">
+    <label for="school" class="form-label text-primary">Escola:</label>
+    <input type="text" class="form-control" id="school" name="school" placeholder="adicionar nome" />
+  </div>
+
+ <div class="mb-3">
+  <label for="teacher" class="form-label text-primary">Professor(a):</label>
+  <select id="teacher" name="teacher" class="form-select" >
+    <option value="-1" selected disabled>Selecione uma opção</option>
+    <option>Otávio</option>
+    <option>Carla</option>
+    <option>Leandro</option>
+    <option>Cláudia</option>
+  </select>
+</div>
+
+<div class="mb-3">
+    <label for="" class="d-block mb-1 text-primary">Opcional:</label>
+    <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="optionRadios" id="optionRadios1" value="option1" />
+        <label class="form-check-label" for="selectionYes">
+          Sim
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="optionRadios" id="optionRadios2" value="option2" checked />
+        <label class="form-check-label" for="selectionNot">
+          Não
+        </label>
+
+    </div>
+</div>
+
+  <div class="d-flex justify-content-center">
+    <button 
+      type="button" 
+      class="btn btn-primary col-5"
+      data-bs-toggle="modal"
+      data-bs-target="#sendFormModal"
+
+      > Enviar 
+    </button>
+  </div>
+</form>
